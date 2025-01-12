@@ -1,0 +1,124 @@
+body{
+    /*background-color: #C64C5C;*/
+    background-color: teal;/*
+    background-image: url('ba.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;*/
+    
+    
+}
+.prompt{    
+    margin-top: 12%;
+    margin-left: 64%;
+    background-color: #ffffff00;
+    width: 35%;
+    height: 40%;
+
+    
+    position: absolute;
+    border-radius: 20px;
+}
+
+#Login{
+    margin-top: 10% ;
+    margin-left: 25%;
+    text-align: center;
+    position: absolute;
+    background-color: gold;
+    border-radius: 10px;
+    height: 20%;
+    font-size: 250%;
+    font-size: 250%;
+    width: 50%;
+    animation: upe 4s;
+}
+#Sign{
+    margin-top: 30%;
+    margin-left: 25%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 250%;
+    height: 20%;
+    width: 50%;
+    background-color: purple;
+    animation: upe 4s;
+}
+a.fill-divS {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+a.fill-divS:visited {
+    color: black;
+}
+a.fill-divS:hover {
+    color: black;
+}
+a.fill-divL {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+a.fill-divL:visited {
+    color: black;
+}
+a.fill-divL:hover {
+    color: black;
+}
+.Logo{
+    margin-top: 12%;
+    margin-left: 71.75%;
+
+    width: 19.5%;
+    height: 39%;
+
+    
+    position: absolute;
+    border-radius: 20px;
+    background-color: white;
+    position:absolute;
+    z-index: -10;
+    animation-name: upS;
+    animation-duration: 4s;
+}
+
+.ima{
+    margin-top: -1%;
+    margin-left: -10%;
+    aspect-ratio: 666/456;
+    height: 100.9%;
+    position: absolute;
+    margin-bottom: 0%;
+    animation-name: slide;
+    animation-duration: 4s;
+
+}
+@keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+@keyframes upS{
+    0% {
+        transform: translateY(-200%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+@keyframes upe{
+    0% {
+        transform: translateY(-1000%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
