@@ -1,0 +1,42 @@
+body{
+    background-color: #A3D5F5;
+    transition: background-color 2s ease;
+}
+.loi{
+    background-color: #F4E3C7;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40%;
+    width: 50%;
+    height: 70%;
+}
+.hed{
+    margin-top: 4%;
+    background-color: aquamarine;
+    font-size: 200%
+}
+#firname{
+    margin-top: 2%;
+    margin-left: 10%;
+    position: absolute;
+}
+#lasname{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+#sdid{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+#gend{
+    position: absolute;
+    margin-top: 11%;
+    margin-left: 10%;
+}
+.retHome{
+    margin-top: -2%;
+    position: absolute;
+    font-size: 250%;
+}

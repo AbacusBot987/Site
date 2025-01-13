@@ -186,13 +186,17 @@ a.fill-divL:hover {
 #la{
     text-align: center;
     margin-left: 34%;
-    margin-top: 20%;
+    margin-top: 15%;
     border-radius: 10px;
     width: 30%;
     font-size: 200%;
-    z-index: 1000000;
+    z-index: 10;
     background-color: orange;
 
+}
+#lc{
+    margin-top: 2%;
+    margin-left: 33%;
 }
 a.logs {
     display: block;
