@@ -100,7 +100,7 @@ a.fill-divL:hover {
 }
 @keyframes slide {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(-76.35%);
     }
     100% {
       transform: translateX(0%);
@@ -121,4 +121,92 @@ a.fill-divL:hover {
       100% {
         transform: translateY(0);
       }
+}
+.lo{
+    margin-top: 12%;
+    margin-left: 71.75%;
+
+    width: 19.5%;
+    height: 39%;
+    align-items: center;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #ffffff;
+    position:absolute;
+    z-index: 10;
+    pointer-events: none;
+    animation-name: upS;
+    animation-duration: 4s;
+}
+#username{
+    margin-top: 20%;
+    margin-left: 11%;
+    width: 75%;
+    height: 12%;
+    font-size: 100%;
+
+}
+#password{
+    margin-top: 10%;
+    margin-left: 11%;
+    width: 75%;
+    height: 12%;
+    font-size: 100%;
+
+}
+
+.hide {
+    /* opacity:0;
+     /*animation: fadeIn 2s backwards;*/
+     animation: fadeOut 0s forwards;
+ }
+ .show {
+     /*opacity:1;*/
+     animation: fadeIn 0s forwards; /* adjust duration and animation name as needed */
+ 
+   
+ }
+ @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+#la{
+    text-align: center;
+    margin-left: 34%;
+    margin-top: 20%;
+    border-radius: 10px;
+    width: 30%;
+    font-size: 200%;
+    z-index: 1000000;
+    background-color: orange;
+
+}
+a.logs {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+.ted{
+    margin-top: -21.5%;
+    margin-left: 12%;
+    color: red;
+    position: absolute;
+}
+#def{
+    margin-top: 0%;
 }

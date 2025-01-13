@@ -1,0 +1,158 @@
+body{
+    /*background-color: #C64C5C;*/
+    background-color: teal;/*
+    background-image: url('ba.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;*/
+    overflow-x: hidden;
+    
+    
+}
+
+.ima{
+    margin-top: -1%;
+    margin-left: -100%;
+    aspect-ratio: 666/456;
+    height: 101%;
+    position: absolute;
+    animation: shrink 1s;
+    z-index: 2;
+
+}
+
+@keyframes shrink{
+    0%{left: 90%;}
+    100%{left: 0%;}
+}
+.bar{
+    margin-top: -.6%;
+    margin-left: -.6%;
+    width: 6.5%;
+    height: 14%;
+    z-index: -10;
+    padding-bottom: 39.3%;
+    background-color: #BE3144;
+    animation: sho 1s;
+    position: absolute;
+}
+.ima2{
+    margin-top: 0%;
+    margin-left: -1%;
+    aspect-ratio: 666/456;
+    height: 10%;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 0%;
+    animation: shw 3s;
+
+}
+
+.social{
+    margin-top: 8%;
+    margin-left: 0.4%;
+    aspect-ratio: 512/512;
+    height: 8%;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 0%;
+    animation: shw1 2s;
+
+}
+.assignments{
+    margin-top: 15%;
+    margin-left: 0.4%;
+    aspect-ratio: 512/512;
+    height: 9%;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 0%;
+    animation: shw2 1s;
+
+}
+@keyframes sho{
+    0% {
+        transform: translateY(-200%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+
+@keyframes exit{
+    0% {
+        right:8.2%;
+      }
+      100% {
+        right:-20%;
+      }
+}
+@keyframes exits{
+    0% {
+        transform: translateX(530%);
+      }
+      100% {
+        transform: translateX(696%);
+      }
+}
+
+@keyframes shw{
+    0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+}
+@keyframes shw1{
+    0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+}
+@keyframes shw2{
+    0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+}
+.blur{
+    margin-left: -1%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(#000000ff,#00000000);
+    padding-right: .5%;
+    z-index: -10;
+}
+.hide {
+    /* opacity:0;
+     /*animation: fadeIn 2s backwards;*/
+     animation: fadeOut 2s forwards;
+ }
+ .show {
+     /*opacity:1;*/
+     animation: fadeIn 2s forwards; /* adjust duration and animation name as needed */
+ 
+   
+ }
+ @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
