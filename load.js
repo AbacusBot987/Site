@@ -20,6 +20,18 @@ var bu = document.getElementById('er')
 var nd = document.getElementById('cf')
 var rg = document.getElementById('rf')
 var vb = document.getElementById('bx')
+var done = document.getElementById("thru")
+
+
+
+
+
+
+
+
+
+
+
 el.onclick = function () {  
     if(c1&&c2&&c3&&c4&&c5){
         var result = countFromChar(emia.value);
@@ -30,6 +42,10 @@ el.onclick = function () {
             nd.style.pointerEvents = 'auto';
             vb.style.visibility = 'visible'
             rg.style.visibility = 'hidden'
+            el.style.visibility = 'hidden'
+            el.style.pointerEvents = 'none';
+            done.style.visibility = 'visible'
+            done.style.pointerEvents = 'auto';
             valid = true
         }else{
             valid = false

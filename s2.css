@@ -1,6 +1,7 @@
 body{
     background-color: #A3D5F5;
     transition: background-color 2s ease;
+    overflow: hidden;
 }
 .loi{
     background-color: #F4E3C7;
@@ -97,12 +98,15 @@ body{
     margin-left: 42%;
     font-size: 200%;
 }
-.vack{
+#bx{
     position: absolute;
     margin-top: 35%;
     margin-left: 2%;
     font-size: 200%;
+    width: 10%;
+    height: 8%;
     visibility: hidden;
+    z-index: 100;
 }
 .rwq{
     position: absolute;
@@ -139,9 +143,9 @@ a.hoe:hover {
 
 .dine{
     position: absolute;
-    background-color: orange;
+    background-color: #F4E3C7;
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 3%;
     padding-right: 22.2%;
     padding-bottom: 21.4%;
     visibility: hidden;
@@ -149,7 +153,7 @@ a.hoe:hover {
 }
 #code{
     position: absolute;
-    margin-top: 35%;
+    margin-top: 20%;
     margin-left: 8%;
     font-size: 250%;
     width: 80%;
@@ -168,4 +172,19 @@ a.hoe:hover {
     visibility: hidden;
     pointer-events: none;
 
+}
+.cnf{
+    margin-top: 20%;
+    font-size: 250%;
+    width: 200%;
+    height: 30%;
+    margin-left: 15%;
+}
+.confir{
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 39%;
+    font-size: 200%;
+    visibility: hidden;
+    pointer-events: none;
 }
