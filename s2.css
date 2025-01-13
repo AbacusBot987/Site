@@ -10,33 +10,162 @@ body{
     width: 50%;
     height: 70%;
 }
+
+
+
 .hed{
     margin-top: 4%;
     background-color: aquamarine;
     font-size: 200%
 }
 #firname{
-    margin-top: 2%;
+    margin-top: 5%;
     margin-left: 10%;
     position: absolute;
+    height: 5%;
+    width: 30%;
+}
+#fn{
+    position: absolute;
+    margin-top: 7.5%;
+    margin-left: 10%;
+    color: red;
 }
 #lasname{
     position: absolute;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 10%;
+    height: 5%;
+    width: 30%;
+}
+#ln{
+    
+    margin-top: 12.5%;
+    position: absolute;
+    margin-left: 10%;
+    color: red;
+}
+#sc{
+    
+    margin-top: 22.5%;
+    position: absolute;
+    margin-left: 10%;
+    color: red;
+}
+#sd{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 17.5%;
+    color: red;
+}
+#en{
+    
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 27.5%;
+    color: red;
 }
 #sdid{
     position: absolute;
-    margin-top: 8%;
+    margin-top: 15%;
     margin-left: 10%;
+    height: 5%;
+    width: 30%;
 }
-#gend{
+#emai{
     position: absolute;
-    margin-top: 11%;
+    margin-top: 25%;
     margin-left: 10%;
+    height: 5%;
+    width: 30%;
+}
+#schol{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 10%;
+    height: 5%;
+    width: 30%;
 }
 .retHome{
     margin-top: -2%;
     position: absolute;
     font-size: 250%;
+}
+.next{
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 42%;
+    font-size: 200%;
+}
+.vack{
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 2%;
+    font-size: 200%;
+    visibility: hidden;
+}
+.rwq{
+    position: absolute;
+    margin-top: 02%;
+    margin-left: 10%;
+}
+
+a.nt {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+a.nt:visited {
+    color: black;
+}
+a.nt:hover {
+    color: black;
+}
+a.hoe {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+a.hoe:visited {
+    color: black;
+}
+a.hoe:hover {
+    color: black;
+}
+
+.dine{
+    position: absolute;
+    background-color: orange;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding-right: 22.2%;
+    padding-bottom: 21.4%;
+    visibility: hidden;
+    pointer-events: none;
+}
+#code{
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 8%;
+    font-size: 250%;
+    width: 80%;
+    height: 15%;
+}
+.Bust{
+    position: absolute;
+    background-color: #F4E3C7;
+    margin-top: 0%;
+    margin-left: 8.4%;
+    padding-top: 9%;
+    width: 36%;
+    height: 50%;
+    font-size: 250%;
+    text-align: center;
+    visibility: hidden;
+    pointer-events: none;
+
 }
