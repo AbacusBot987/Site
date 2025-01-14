@@ -9,6 +9,8 @@ var warnUsere = document.getElementById("def")
 var password = document.getElementById('password').value
 var passwa = document.getElementById('password')
 var firstClo = false;
+var ps = false
+var us = false
 
 el.onclick = function () {
   console.log('Click just happened')
@@ -17,6 +19,9 @@ el.onclick = function () {
 }
 
 pi.onclick = function () {
+    if(ps&&us){
+        pi.href = 'sign.html'
+    }
     if (userna.value.trim() === "") {
         console.log("The input is empty.");
     } else {
@@ -63,6 +68,7 @@ pi.onclick = function () {
         console.log("The textbox is active (focused).");
         userna.style.boxShadow = "none";
         warnUser.textContent = ""
+        us = true
         
     });
     
@@ -72,6 +78,7 @@ pi.onclick = function () {
             userna.style.boxShadow = "0px 0px 10px #FF0000";
             console.log("empty username")
             warnUser.textContent = "Username or Email can't be empty"
+            us = false;
         }
     });
 
@@ -79,7 +86,7 @@ pi.onclick = function () {
         console.log("The textbox is active (focused).");
         passwa.style.boxShadow = "none";
         warnUsere.textContent = ""
-        
+        ps = true
     });
     
     textbo.addEventListener("blur", () => {
@@ -88,6 +95,7 @@ pi.onclick = function () {
             passwa.style.boxShadow = "0px 0px 10px #FF0000";
             console.log("empty username")
             warnUsere.textContent = "Password can't be empty"
+            ps = false
         }
     });
   
