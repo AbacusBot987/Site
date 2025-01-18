@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read All Google Sheets Data</title>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script>
+    const CLIENT_ID = 'YOUR_CLIENT_ID.apps.googleusercontent.com'; // Replace with your Client ID
+    const SHEET_ID = 'YOUR_SPREADSHEET_ID'; // Replace with your Google Sheet ID
+    const RANGE = 'Sheet1'; // Use the sheet name only to fetch all data
+    const SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+
+    let authInstance;
+
+    function loadClient() {
+      gapi.load('client:auth2', initClient);
+    }
+
+    function initClient() {
+      gapi.client.init({
+        clientId: CLIENT_ID,
+        scope: SCOPES,
+      }).then(() => {
+        authInstance = gapi.auth2.getAuthInstance();
+
+        // Automatically sign in if the user is already authenticated
+        if (authInstance.isSignedIn.get()) {
+          fetchSheetData();
+        } else {
+          authInstance.signIn().then(fetchSheetData).catch(console.error);
+        }
+      }).catch(error => console.error('Error initializing Google API client:', error));
+    }
+
+    function fetchSheetData() {
+      const accessToken = authInstance.currentUser.get().getAuthResponse().access_token;
+
+      const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}`;
+
+      fetch(url, {
+        method: 'GET',
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          if (data.values) {
+            console.log('Full Sheet Data:', data.values);
+
+            // Logging each row
+            data.values.forEach((row, index) => {
+              console.log(`Row ${index + 1}:`, row);
+            });
+          } else {
+            console.log('No data found in the sheet.');
+          }
+        })
+        .catch(error => console.error('Error fetching sheet data:', error));
+    }
+
+    document.addEventListener('DOMContentLoaded', loadClient);
+  </script>
+</head>
+<body>
+  <h1>Check Console for Data</h1>
+</body>
+</html>
+  
